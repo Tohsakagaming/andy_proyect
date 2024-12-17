@@ -1,0 +1,157 @@
+body{
+    background-color: #F5F5F7;
+    margin: 20px;
+    padding-top: 100px;
+}
+
+.header{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    width: 97%;
+    height: 50px;
+    background-color: #044E99;
+    position: fixed;
+    color: #f7f5f5;
+    display: flex;
+    z-index: 1000;
+    top: 0;
+    left: 20px;
+    right: 50000px;
+}
+.img_margin{
+    margin-right: 5px;
+    margin-left: 15px;
+}
+.nav nav ul{
+    width: 97%;
+    position: fixed;
+    top: 50px;
+    height: 3rem;
+    padding: 0;
+    margin: 0;
+    background-color: #fcfbfb;
+    display: flex;
+    list-style: none;
+    text-decoration: none;
+    z-index: 1000;
+}
+.nav nav ul li {
+    margin-right: 0px;  /* Espacio entre los elementos de la lista */
+}
+.nav nav ul li a{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: #044E99;
+    text-decoration: none;
+    display: block;
+    height: 100%;
+    width: 100%;
+    padding: 20px;
+    box-sizing: border-box;  
+    border-bottom: 2px solid transparent;
+}
+.nav nav ul li a:hover {
+    color: #fdfdfd;  /* Cambia el color cuando se pasa el mouse */
+    background-color: #044E99;
+    border-bottom: 2px solid #ff00f2;
+}
+.filtro{
+    position: relative;
+    display: flexbox;
+    color: #515152;
+    width: 100%;
+    height: 8rem;
+    background-color: #FFFFFF;
+    font-size: large;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+
+}
+input[type="date"] {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    padding: 10px 15px; /* Espaciado dentro del campo */
+    font-size: 13px; /* Tamaño de la fuente */
+    border-radius: 5px;
+    width: 25%;
+    place-content: none;
+    transition: all 0.3s ease; /* Transición para cuando cambia el estilo */
+}
+input[type="date"]:hover{
+cursor: pointer;
+}
+.fecha{
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    font-size: 14px;
+    color: #777;
+    pointer-events: none;
+    transition: all 0.3s ease;
+}
+.botones {
+    position: absolute;
+    display: flex;
+    top: 75px;
+    background-color:#FFFFFF;
+    border-radius: 15px;
+}
+.contenido{
+    background-color: white; /* Fondo blanco */
+    padding: 10px; /* Espaciado dentro del contenedor */
+    display: flex; /* Usamos Flexbox para distribuir los botones */
+    gap: 10px; /* Espacio entre los botones */
+    align-items: center;
+}
+
+.contenido button {
+    background-color: #007bff; /* Fondo de los botones */
+    color: white; /* Color de texto */
+    border: none; /* Quitar borde por defecto */
+    padding: 10px 20px; /* Relleno de los botones */
+    border-radius: 12px; /* Bordes redondeados */
+    cursor: pointer; /* Cambia el cursor cuando se pasa sobre el botón */
+    font-size: 16px; /* Tamaño de fuente */
+    display: flex; /* Para alinear los íconos con el texto */
+    align-items: center; /* Centra el ícono y el texto */
+    justify-content: flex-end; /* Centra el contenido */
+}
+
+.contenido button i {
+    margin-right: 8px; /* Espacio entre el ícono y el texto */
+}
+
+.contenido button:hover {
+    background-color: #0056b3; /* Color cuando el mouse está sobre el botón */
+}
+
+.contenedor{
+    background-color: #f9fafc;
+    width: 100%;
+}
+table th, table td {
+    padding: 10px;
+    text-align: center;
+    vertical-align: middle,
+}
+.estado{
+    border-radius: 4px;
+    height: 100%;
+    padding: 10px;
+}
+.aceptado{
+    background-color: #28a745;
+    color: white;
+}
+.rechazado{
+    background-color: crimson;
+    color: white;
+}
+table{
+    vertical-align: middle;
+}
+
+div table tbody select{
+    background-color: rgb(119, 119, 117);
+    border-radius: 4px;
+    padding: 10px;
+    text-align: center;
+    vertical-align: middle;
+    height: 100%;
+}
